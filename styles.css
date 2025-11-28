@@ -1,0 +1,160 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: hsl(0, 0%, 0%);
+    padding: 20px 0;
+    border-bottom: 2px solid #ff0000;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00f7d6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #00bfa6;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #00bfa6;
+    color: #121212;
+    padding: 12px 30px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+}
+
+/* Tips Section */
+.tips-section {
+    padding: 60px 0;
+    background-color: #181818;
+}
+
+.tips-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00bfa6;
+}
+
+.tips-section ul {
+    list-style-type: disc;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.tips-section ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* Resources Section */
+.resources-section {
+    padding: 60px 0;
+    background-color: #121212;
+}
+
+.resources-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00bfa6;
+}
+
+.resources-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.resources-section ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.resources-section ul li {
+    margin-bottom: 15px;
+}
+
+.resources-section ul li a {
+    color: #00d9b1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.resources-section ul li a:hover {
+    color: #00bfa6;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
