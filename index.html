@@ -2,74 +2,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Night Code - Fraud Prevention</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>The Night Code</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('login.jpg');
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 2.5em;
+            box-shadow: 0 0 15px #ff0000;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #505050;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #fc0000;
+        }
+
+        .slogan {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #ff0000;
+        }
+
+        h2 {
+            color: #ff0000;
+            margin-top: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        button {
+            background-color: #ff0000;
+            cursor: pointer;
+        }
+
+        .btc-address {
+            font-size: 1.1em;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btc-address strong {
+            font-size: 1em;
+            color: #ff0000;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <div class="container">
-            <h1 class="logo">T.N.C</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#tips">Tips</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>
+            < The Night Code>
+        </h1>
+        <hr>
+        <p class="slogan">+wElC0M3 hUm@N+</p>
     </header>
-    <br>
-    <section id="home" class="hero">
+    <center>
         <div class="container">
-            <h2>The Night Code</h2>
-            <p>Your trusted guide to spotting scams and staying safe online.</p>
-            <a href="https://moonpeople473-prog.github.io/Password.Gen/" target="_blank" rel="noopener"
-                class="btn">Generate
-                Unique Passwords</a>
-            <br><br>
-            <a href="https://moonpeople473-prog.github.io/Pay/" target="_blank" rel="noopener" class="btn">Pay To Learn
-                More >>></a>
-        </div>
-    </section>
+            <h2>We're Here to Help!</h2>
+            <p>
+                We are a group of elite hackers teaching about services such as:
+            </p>
+            <select style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <option value="">Select a service</option>
+                <option value="Phishing and Data Extraction"> >Phishing and Data Extraction< </option>
+                <option value="Scampage Setup"> >Scampage Setup< </option>
+                <option value="Key Logging"> >Key Logging< </option>
+                <option value="Email/Phone Spamming"> >Email/Phone Spamming< </option>
+                <option value="Account Takeovers"> >Account Takeovers< </option>
+                <option value="Account Recovery"> >Account Recovery< </option>
+                <option value="iD Creation w/scan [online use only!]"> >iD Creation w/scan [online use only!]< </option>
+                <option value="SSN Creation [online use only!]"> >SSN Creation [online use only!]< </option>
+                <option value="Server Hosting"> >Server Hosting< </option>
+                <option value="Other"> >Other< </option>
+            </select>
 
-    <section id="tips" class="tips-section">
-        <div class="container">
-            <h2>Fraud Prevention Tips</h2>
+            <p>
+                You must send $20 to The BTC address below.
+
+                Leave your email after, and we'll contact you to discuss your
+                request.
+            </p>
+
+            <strong>Bitcoin Address:
+                bc1qtl76nxmzg0l8p5dzq268rxtd2gt37hz22ezl3k</strong>
             <hr>
-            <ul>
-                <br>
-                <li>Never share your personal information over unsolicited calls or emails.</li>
-                <li>Use strong, unique passwords and enable two-factor authentication.
-                    <br>[Our team has created a site where you can generate unique passwords up to 64 digits.]
-                </li>
-                <li>Verify the source before clicking on any links or downloading attachments.</li>
-                <li>Keep your software and antivirus up to date.</li>
-                <li>Monitor your financial statements regularly for suspicious activity.</li>
-            </ul>
-        </div>
-    </section>
-    <hr>
-    <section id="resources" class="resources-section">
-        <div class="container">
-            <h2>Helpful Resources</h2>
-            <p>Check these sites for more information and support:</p>
-            <ul>
-                <li><a href="https://www.consumer.ftc.gov/features/scam-alerts" target="_blank">FTC Scam Alerts</a></li>
-                <li><a href="https://www.identitytheft.gov/" target="_blank">IdentityTheft.gov</a></li>
-                <li><a href="https://www.cyberaware.gov.uk/" target="_blank">Cyber Aware</a></li>
-            </ul>
-        </div>
-    </section>
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="email">Your Email Address Here</label>
+                    <input type="email" id="email" placeholder="example@domain.com" required>
+                </div>
+                <button type="submit">Send Request</button>
+            </form>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 The Night Code. All rights reserved.</p>
+            <div class="btc-address">
+                <strong>We respond within 15 minutes
+                    [If you do not send payment we will not respond!!]</strong>
+            </div>
         </div>
-    </footer>
+
+        <script>
+            // *** PUT YOUR TELEGRAM BOT TOKEN AND CHAT ID HERE ***
+
+            const botToken = '8422259963:AAHmKegc2mioxu0UJOqr97CBvN7CGXT63Kg';  // <-- Your Telegram Bot Token
+            const chatId = '7481573294';  // <-- Your Chat ID
+
+            function handleSubmit(event) {
+                event.preventDefault();  // Stop form from submitting normally
+
+                // Get email from the input
+                const email = document.getElementById('email').value;
+
+                // Get selected service from dropdown
+                const service = document.querySelector('select').value;
+
+                // Prepare message to send with actual values
+                const message = `New request:\nEmail: ${email}\nService: ${service}`;
+
+                // Telegram API URL
+                const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+                // Send message to Telegram
+                fetch(url)
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Your request has been sent to Telegram!');
+                        } else {
+                            alert('Error sending data.');
+                        }
+                    })
+                    .catch(error => {
+                        alert('Network error.');
+                        console.error('Error:', error);
+                    });
+            }
+        </script>
+
 </body>
 
 </html>
